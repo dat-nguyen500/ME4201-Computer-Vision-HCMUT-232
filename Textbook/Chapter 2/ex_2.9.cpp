@@ -17,7 +17,11 @@ int main(int argc, char** argv)
         return -1;
     }
 
-    //Convert the image from BGR to YCrCb color space
+    //The loaded image is in BGR color space. None of the 3 channels (blue, green and red) of this color space cannot
+    //be processed to equalize the histogram because all the channels contain color information.
+    //Therefore the loaded image should be converted to the YCrCb color space.
+    //In this color space, Y channel only contains intensity information while Cr and Cb channels contain color information.
+    //Therefore only the Y channel needs to be processed in order to equalize the histogram.
     Mat hist_equalized_image;
     cvtColor(image, hist_equalized_image, COLOR_BGR2YCrCb);
 
