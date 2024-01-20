@@ -30,7 +30,6 @@ int main()
 	cout << "Intensity at (10,15) = " << endl << "blue= " << blue << "green= " << green << "red= " << red << endl
 		<< endl;
 	// ******************* WRITE to Pixel intensity **********************
-	// This is an example in OpenCV 2.4.6.0 documentation 
 	for (int i = 0; i < gray.rows; i++)
 	{
 		for (int j = 0; j < gray.cols; j++)
