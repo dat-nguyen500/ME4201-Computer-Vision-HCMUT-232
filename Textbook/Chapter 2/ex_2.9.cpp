@@ -7,7 +7,7 @@ using namespace std;
 int main(int argc, char** argv)
 {
     // Read the image file
-    Mat image = imread("D:/My OpenCV Website/fly-agaric.jpg");
+    Mat image = imread("lena.jpg");
 
     // Check for failure
     if (image.empty())
