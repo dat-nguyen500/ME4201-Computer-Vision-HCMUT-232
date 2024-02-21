@@ -26,9 +26,9 @@ void histogram(string const& name, Mat const& Image)
 }
 int main(int argv, char** argc)
 {
-	float img[16] = { 30,20,30,30,
-					80,30,100,110,
-					120,160,30,150,
+	float img[16] = { 40,20,30,30,
+					80,40,100,110,
+					120,160,40,150,
 					220,230,240,250 };
 	Mat gray_img = Mat(4, 4, CV_32F, img);
 	Mat gray_img_his;
