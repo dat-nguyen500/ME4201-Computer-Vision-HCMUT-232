@@ -10,7 +10,7 @@ int main()
         10, 9, 95, 95, 95, 10, 11,
         10, 95, 10, 11, 10, 95, 11,
         10, 9, 95, 95, 95, 13, 11,
-        10, 10, 10, 10, 10, 13, 1);
+        10, 10, 10, 10, 10, 13, 11);
     Mat dst;
     GaussianBlur(src, dst, Size(3, 3), sigma, sigma, BORDER_REPLICATE);
     cout << "Image Matrix" << endl << "" << src << endl;
