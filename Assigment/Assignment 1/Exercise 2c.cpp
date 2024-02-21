@@ -4,9 +4,9 @@ using namespace cv;
 using namespace std;
 
 int main() {
-    Mat source = (Mat_<uint8_t>(4, 4) << 30, 20, 30, 30,
-        80, 30, 100, 110,
-        120, 160, 30, 150,
+    Mat source = (Mat_<uint8_t>(4, 4) << 40, 20, 30, 30,
+        80, 40, 100, 110,
+        120, 160, 40, 150,
         220, 230, 240, 250);
     Mat dst;
     double thresh = 0, maxValue = 255;
